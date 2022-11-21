@@ -135,3 +135,9 @@ class FundingRaised:
 
 class RecordNotFound(Exception):
   pass
+
+if __name__ == "__main__":
+    
+    print(FundingRaised.where({'company_name': 'Facebook'}))
+    print("___________________________________________________")
+    print(FundingRaised.find_by({'company_name': 'Facebook'}))
